@@ -7,7 +7,7 @@ env: #remove this
   CONTAINER_REGISTRY: docker.io
   IMAGE_NAME: clean-work
   DOCKER_USERNAME: alorcoda
-# DOCKER_PASSWORD: PrintTest!243! 
+# DOCKER_PASSWORD: 
   DOCKER_HUB_TOKEN: dckr_pat_F3bfVb0rhbi42_lC8tQtUwDB06w
 
 jobs:
