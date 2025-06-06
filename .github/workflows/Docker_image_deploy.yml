@@ -2,12 +2,8 @@ name: Docker Workflow
 
 on:
   schedule: 
-<<<<<<< HEAD
-    - cron: "*/2 * * * *"  # Runs every 1 minute
-=======
-    - cron: "* * * * *"  # Runs every 1 minute
->>>>>>> c1d02d5d02444cb9f348981f24e3afb08aa5646b
-  workflow_dispatch:
+    - cron: "*/2 * * * *" # Runs every 2 minutes
+  workflow_dispatch: 
 env:
   CONTAINER_REGISTRY: docker.io
   IMAGE_NAME: clean-work
