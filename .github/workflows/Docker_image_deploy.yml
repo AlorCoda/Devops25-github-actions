@@ -8,7 +8,7 @@ on:
     paths-ignore:  
       - README.md 
       - Dockerfile 
-      - Docker_image_deploy.yml
+      - .github/*
       
 env:
   CONTAINER_REGISTRY: docker.io
