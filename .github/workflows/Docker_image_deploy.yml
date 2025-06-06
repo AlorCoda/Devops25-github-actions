@@ -3,7 +3,7 @@ name: Docker Workflow
 on:
   schedule: 
     - cron: "* * * * *"  # Runs every 1 minute
-  # workflow_dispatch
+  workflow_dispatch:
 env:
   CONTAINER_REGISTRY: docker.io
   IMAGE_NAME: clean-work
