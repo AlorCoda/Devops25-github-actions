@@ -4,7 +4,7 @@ on:
   pull_request:
      types: # or [opened, closed]
       - opened
-      - closed
+    
 env:
   CONTAINER_REGISTRY: docker.io
   IMAGE_NAME: clean-work
