@@ -2,7 +2,6 @@
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=AlorCoda_Devops25-github-actions&metric=bugs)](https://sonarcloud.io/summary/new_code?id=AlorCoda_Devops25-github-actions)
 
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AlorCoda_Devops25-github-actions&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AlorCoda_Devops25-github-actions)
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=AlorCoda_Devops25-github-actions&metric=coverage)](https://sonarcloud.io/summary/new_code?id=AlorCoda_Devops25-github-actions)
 
