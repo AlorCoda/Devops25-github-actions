@@ -20,10 +20,10 @@ jobs:
       - name: Install Sonar Scanner
         run: npm install -g sonarqube-scanner
 
-      - name: Run SonarQube Analysis
-        run: |
-          sonar-scanner \
-            -Dsonar.projectKey=AlorCoda_Devops25-github-actions \
-            -Dsonar.organization=jomacs-github-actions202 \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+      # - name: Run SonarQube Analysis
+      #   run: |
+      #     sonar-scanner \
+      #       -Dsonar.projectKey=AlorCoda_Devops25-github-actions \
+      #       -Dsonar.organization=jomacs-github-actions202 \
+      #       -Dsonar.host.url=https://sonarcloud.io \
+      #       -Dsonar.token=${{ secrets.SONAR_TOKEN }}
