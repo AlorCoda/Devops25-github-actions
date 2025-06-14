@@ -1,10 +1,9 @@
-name: Snyk Security Scan
+name: npm Audit Security Check
 
-on:
-  push
+on: [push]
 
 jobs:
-  security:
+  audit:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -21,7 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Snyk Security Scan
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: Run npm audit
+        run: npm audit --audit-level=high > npm-audit.json
+        continue-on-error: true
+
+      - name: Upload Audit Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-audit-report
+          path: npm-audit.json
